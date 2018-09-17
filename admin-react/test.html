@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .skeleton {
+            padding: 10px;
+        }
+
+        .skeleton .skeleton-head,
+        .skeleton .skeleton-title,
+        .skeleton .skeleton-content {
+            background: rgb(194, 207, 214);
+            background-image: linear-gradient(90deg,rgba(255, 255, 255, 0.15) 25%, transparent 25%);
+            background-size: 10rem 10rem;
+           animation: skeleton-stripes 0.5s linear infinite;
+        }
+
+        @keyframes skeleton-stripes {
+            from {
+                background-position: 0 0 ;
+            }
+            to {
+                background-position: 10rem 0;
+            }
+        }
+
+        .skeleton-head {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .skeleton-body {
+            margin-left: 110px;
+        }
+
+        .skeleton-title {
+            width: 500px;
+            height: 60px;
+        }
+
+        .skeleton-content {
+            width: 260px;
+            height: 30px;
+            margin-top: 10px;
+        }
+        .userId {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .userBox {
+            margin-left: 110px;
+        }
+
+        .user-title {
+            width: 500px;
+            height: 60px;
+        }
+
+        .user-content {
+            width: 260px;
+            height: 30px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="skeleton">
+    <div class="skeleton-head"></div>
+    <div class="skeleton-body">
+        <div class="skeleton-title"></div>
+        <div class="skeleton-content"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="userId">sf</div>
+    <div class="userBox">
+        <div class="user-title">sdafsd</div>
+        <div class="user-content"></div>
+    </div>
+</div>
+<script>
+    var name='';
+    document.getElementsByClassName('user-content')[0].innerHTML=name;
+</script>
+</body>
+</html>
